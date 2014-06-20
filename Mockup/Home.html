@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,800,600,400' rel='stylesheet' type='text/css'>
+    <title>Home</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class = "col-md-1">
+            <img src="logo.png" id="logo"/>
+        </div>
+        <div class = "col-md-15" id="logout">
+            <div class = "pull-right"><img src="usr_icn.png"/>Ronak Goyal | <a href="https://www.google.com">Logout</a></div>
+        </div>
+    </div>
+    <div class="row" id="second_row">
+        <div class="col-md-5">
+            <div>
+                <img src="date_filter_icn.png" id="date_filter_icn"/><span id="date_filter">12 June - 23 June</span>
+            </div>
+        </div>
+        <div class="col-md-11">
+            <div class="pull-right" id="last_sync">
+                <span>Last Synched on: </span><span>12 June 2014</span><img src="synch_icn.png" id="sync_icn"/>
+            </div>
+        </div>
+    </div>
+    <div class="row" id = "third_row">
+        <div class="col-md-12">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-md-2 col-xs-4 control-label" id="filter_by">Filter by:</label>
+                    <div class="col-md-5 col-xs-7 col-lg-4">
+                        <select class="form-control" id="one">
+                            <option value="one">All Lists</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                            <option value="four">Four</option>
+                            <option value="five">Five</option>
+                        </select>
+                    </div>
+                    <div class = "col-md-5 col-xs-7 col-lg-4">
+                        <select class="form-control">
+                            <option value="one">All Ratings</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                            <option value="four">Four</option>
+                            <option value="five">Five</option>
+                        </select>
+                        <div class="col-xs-16">
+                            <div class="checkbox pull-right">
+                                <label style="font-size: 12px;">
+                                    <input type="checkbox"> Ignore archived tasks </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" id="filter_icn"><img src="filter_icn.png"/></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class=" col-md-2">
+            <span class="showing">Showing 1-10 of 50 |</span>
+        </div>
+        <div class=" col-md-2 pull-right">
+            <span class="showing"><a href="ef">Next 10 ></a></span>
+        </div>
+        <div class="col-md-16 col-xs-16 col-lg-16" id = "tableData">
+            <table class="table table-stripped">
+                <thead>
+                <tr style="background-color: #bdbdbd">
+                    <th class="col-md-4 " style="padding-left: 27px;">Task</th>
+                    <th class="col-md-2 ">Finished by</th>
+                    <th class="col-md-2 ">Date added</th>
+                    <th class="col-md-2 ">Board</th>
+                    <th class="col-md-2 ">Appraiser</th>
+                    <th class="col-md-4 ">Rating</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="checkbox" style="margin-top:0px; color: #04BAEE; font-family: 'Open Sans'">
+                            <label>
+                                <input type="checkbox">Fetch flag for notification to be turned true on call answered, on push notification and on campaign finished<br>List: Code Review </label>
+                        </div>
+                    </td>
+                    <td>Adarsh</td>
+                    <td>Today</td>
+                    <td>PCCI-X</td>
+                    <td>Unassigned</td>
+                    <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>Unrated</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="checkbox" style="margin-top:0px; color: #04BAEE; font-family: 'Open Sans'">
+                            <label>
+                                <input type="checkbox">Default calling programs TuFono must be listed.<br>List: Code Review</label>
+                        </div>
+                    </td>
+                    <td>Aditya</td>
+                    <td>14 June</td>
+                    <td>PCCI-X</td>
+                    <td>Sudhir</td>
+                    <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>Met expectations</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="checkbox" style="margin-top: 0px; color: #04BAEE; font-family: 'Open Sans'">
+                            <label><input type="checkbox">Alert Dialogues<br>List: Done</label>
+                        </div>
+                    </td>
+                    <td>Satish</td>
+                    <td>20 June</td>
+                    <td>My Activities</td>
+                    <td>Unassigned</td>
+                    <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>Unrated</td>
+                </tr>
+                <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-16">
+            <div class="checkbox" style="margin-top: 0px">
+                <label><input type="checkbox"><button type="submit" style="padding: 0px; border:0px; margin-left: 10px"><img src="trash_icn.png"/></button></label>
+                <button type="submit" style="padding: 0px; border:0px; margin-left: 25px"><img src="download_csv_icn.png"/></button>
+                <button type="submit" class="pull-right" style="padding: 0px; border:0px; margin-right: 10px;"><img src="add_task_icn.png"/></button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

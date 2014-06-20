@@ -1,0 +1,86 @@
+#logo{
+    margin-top: 10px;
+}
+
+#logout {
+    margin-top: 20px;
+}
+
+#date_filter_icn {
+    height : 38px;
+    width : 38px;
+    margin-right: 6px;
+}
+
+#date_filter {
+    color : #f5a623;
+    font-size: 24px;
+    font-family: "Open Sans";
+}
+
+#second_row {
+    margin-top: 30px;
+}
+
+#last_sync {
+    color : #848484;
+    font-size: 24px;
+    font-family: 'Open Sans';
+}
+
+#sync_icn {
+    height: 30px;
+    width: 32px;
+    margin-left: 8px;
+}
+
+#filter_icn{
+    padding:0px;
+    border:0px;
+    margin-left: 10px;
+}
+
+#third_row {
+    margin-top: 45px;
+    border: 2px solid lightgray;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+    height:auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.showing {
+    font-family: "Open Sans";
+    font-size:10px;
+}
+#tableData {
+    height:300px;
+}
+
+#filter_by {
+    font-family: "Open Sans";
+    color: #454643;
+    font-size: 14px;
+    top:7px;
+}
+
+td {
+    font-family: "Open Sans";
+    color: #b1b1b2;
+    font-size: 14px;
+}
+
+i {
+    color:black;
+    margin-right:5px;
+    height:15px;
+    width:15px;
+}
+
+th {
+    font-family: "Open Sans";
+    color:#04BAEE;
+    font-size:12px;
+    font-weight: normal;
+}
+
